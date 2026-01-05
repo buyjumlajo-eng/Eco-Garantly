@@ -1,5 +1,5 @@
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 import { Language, translations } from './translations';
 
 interface I18nContextProps {
@@ -21,7 +21,10 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   return (
     <I18nContext.Provider value={value}>
-      <div dir={translations[language].dir}>
+      <div 
+        dir={translations[language].dir} 
+        className={language === 'ar' ? 'font-arabic' : ''}
+      >
         {children}
       </div>
     </I18nContext.Provider>

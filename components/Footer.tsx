@@ -27,9 +27,7 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="text-[#f6eabe] font-bold uppercase tracking-widest mb-6">{t.footer.contact}</h4>
             <ul className="space-y-4 text-gray-400">
-              <li>HQ: Tirana, Albania</li>
-              <li>contact@garantly.com</li>
-              <li>+355 69 000 0000</li>
+              <li>info@garantly.com</li>
             </ul>
           </div>
         </div>
